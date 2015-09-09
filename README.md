@@ -10,3 +10,9 @@ This is a collection of components for [EAGLE](http://www.cadsoftusa.com/) I use
 ## Installation
 
 Download the .lbr file inside the ```library``` folder and move it into ```lbr``` folder inside your EAGLE application folder. This library file was created with EAGLE v6.
+
+## Other usefull libraries
+
+* [Adafruit library](https://github.com/adafruit/Adafruit-Eagle-Library)
+* [SparkFun libraries](https://github.com/sparkfun/SparkFun-Eagle-Libraries)
+* [Teensy libraries](http://www.pjrc.com/teensy/eagle_lib.html)
