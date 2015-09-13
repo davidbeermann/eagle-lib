@@ -18,3 +18,4 @@ Download the .lbr file inside the ```library``` folder and move it into ```lbr``
 * [Adafruit library](https://github.com/adafruit/Adafruit-Eagle-Library)
 * [SparkFun libraries](https://github.com/sparkfun/SparkFun-Eagle-Libraries)
 * [Teensy libraries](http://www.pjrc.com/teensy/eagle_lib.html)
+* [volks73 libraries](https://github.com/volks73/eagle-libraries) — specifically the ```volks73-Atmel.lbr``` containing ATtiny2/4/85
