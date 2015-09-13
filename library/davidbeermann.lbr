@@ -105,6 +105,33 @@ This library can be found on &lt;a href="https://github.com/davidbeermann/eagle-
 <hole x="11.62" y="-16.27" drill="3.2"/>
 <text x="6.5" y="-8.88" size="1.27" layer="21" align="center">ADXL345</text>
 </package>
+<package name="AKL101-02">
+<pad name="P$1" x="0" y="0" drill="0.9" diameter="2.54"/>
+<pad name="P$2" x="5.08" y="0" drill="0.9" diameter="2.54"/>
+<wire x1="-2.54" y1="4" x2="7.62" y2="4" width="0.127" layer="21"/>
+<wire x1="7.62" y1="4" x2="7.62" y2="-4" width="0.127" layer="21"/>
+<wire x1="7.62" y1="-4" x2="-2.54" y2="-4" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-4" x2="-2.54" y2="4" width="0.127" layer="21"/>
+</package>
+<package name="AKL101-03">
+<pad name="P$1" x="0" y="0" drill="0.9" diameter="2.54"/>
+<pad name="P$2" x="5.08" y="0" drill="0.9" diameter="2.54"/>
+<pad name="P$3" x="10.16" y="0" drill="0.9" diameter="2.54"/>
+<wire x1="-2.54" y1="4" x2="-2.54" y2="-4" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-4" x2="12.7" y2="-4" width="0.127" layer="21"/>
+<wire x1="12.7" y1="-4" x2="12.7" y2="4" width="0.127" layer="21"/>
+<wire x1="12.7" y1="4" x2="-2.54" y2="4" width="0.127" layer="21"/>
+</package>
+<package name="LT1084CT-5">
+<pad name="P$1" x="0" y="0" drill="0.8" diameter="1.778"/>
+<pad name="P$2" x="2.54" y="0" drill="0.8" diameter="1.778"/>
+<pad name="P$3" x="5.08" y="0" drill="0.8" diameter="1.778"/>
+<wire x1="-2.71" y1="-1.6" x2="-2.71" y2="2.9" width="0.127" layer="21"/>
+<wire x1="-2.71" y1="2.9" x2="7.79" y2="2.9" width="0.127" layer="21"/>
+<wire x1="7.79" y1="2.9" x2="7.79" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="7.79" y1="-1.6" x2="-2.71" y2="-1.6" width="0.127" layer="21"/>
+<text x="2.54" y="1.905" size="1.016" layer="21" align="center">LT1084CT-5</text>
+</package>
 </packages>
 <symbols>
 <symbol name="EBS35">
@@ -159,6 +186,33 @@ This library can be found on &lt;a href="https://github.com/davidbeermann/eagle-
 <circle x="17.78" y="-20.32" radius="1.524" width="0.254" layer="94"/>
 <text x="12.7" y="-25.4" size="1.778" layer="94" align="bottom-center">ADXL345</text>
 </symbol>
+<symbol name="AKL101-02">
+<pin name="P$1" x="2.54" y="-12.7" length="middle" rot="R90"/>
+<pin name="P$2" x="5.08" y="-12.7" length="middle" rot="R90"/>
+<wire x1="0" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="7.62" y1="0" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="0" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="0" y1="-7.62" x2="0" y2="0" width="0.254" layer="94"/>
+</symbol>
+<symbol name="AKL101-03">
+<pin name="P$1" x="2.54" y="-12.7" length="middle" rot="R90"/>
+<pin name="P$2" x="5.08" y="-12.7" length="middle" rot="R90"/>
+<pin name="P$3" x="7.62" y="-12.7" length="middle" rot="R90"/>
+<wire x1="0" y1="-7.62" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="10.16" y2="0" width="0.254" layer="94"/>
+<wire x1="10.16" y1="0" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="0" y2="-7.62" width="0.254" layer="94"/>
+</symbol>
+<symbol name="LT1084CT-5">
+<pin name="GND" x="-5.08" y="-5.08" length="middle"/>
+<pin name="VOUT" x="10.16" y="-15.24" length="middle" rot="R90"/>
+<pin name="VIN" x="25.4" y="-5.08" length="middle" rot="R180"/>
+<wire x1="0" y1="0" x2="20.32" y2="0" width="0.254" layer="94"/>
+<wire x1="20.32" y1="0" x2="20.32" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-10.16" x2="0" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="0" y1="-10.16" x2="0" y2="0" width="0.254" layer="94"/>
+<text x="10.414" y="1.27" size="1.27" layer="94" align="center">LT1084CT-5</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="EBS35">
@@ -204,6 +258,48 @@ This module was purchased at &lt;a href="http://eckstein-shop.de/GY-291-ADXL345-
 <connect gate="G$1" pin="SDA" pad="P$7"/>
 <connect gate="G$1" pin="SDO" pad="P$6"/>
 <connect gate="G$1" pin="VCC" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AKL101-*">
+<description>&lt;h3&gt;AKL 101-* Terminal&lt;/h3&gt;
+
+
+Terminal with wire protection. RM: 5.08 mm. Rated current: 13 A.&lt;br&gt;
+&lt;br&gt;
+Purchased at &lt;a href="https://www.reichelt.de/Plug-Systems-RIA/AKL-101-02/3/index.html?&amp;ACTION=3&amp;LA=5000&amp;GROUP=C1F3&amp;GROUPID=5754&amp;ARTICLE=36605&amp;START=0&amp;SORT=-rank&amp;OFFSET=16" target="_blank"&gt;Reichelt&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="AKL101-02" x="0" y="0"/>
+</gates>
+<devices>
+<device name="02" package="AKL101-02">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LT1084CT-5">
+<description>&lt;h3&gt;LT1084CT-5&lt;/h3&gt;
+
+5V/5A Low Dropout Positive Fixed Regulators</description>
+<gates>
+<gate name="G$1" symbol="LT1084CT-5" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LT1084CT-5">
+<connects>
+<connect gate="G$1" pin="GND" pad="P$1"/>
+<connect gate="G$1" pin="VIN" pad="P$2"/>
+<connect gate="G$1" pin="VOUT" pad="P$3"/>
 </connects>
 <technologies>
 <technology name=""/>
